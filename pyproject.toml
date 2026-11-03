@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "photo-organizer"
+dynamic = ["version"]
+description = "Sort photos into date folders using EXIF dates. Pure Python, no dependencies."
+readme = "README.md"
+authors = [{ name = "MauPoLom" }]
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["photos", "exif", "organize", "sort", "jpeg", "heic"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Graphics",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/MauPoLom/photo-organizer"
+Issues = "https://github.com/MauPoLom/photo-organizer/issues"
+Changelog = "https://github.com/MauPoLom/photo-organizer/blob/main/CHANGELOG.md"
+
+[project.scripts]
+photo-organizer = "photo_organizer:main"
+
+[tool.setuptools]
+py-modules = ["photo_organizer"]
+
+[tool.setuptools.dynamic]
+version = { attr = "photo_organizer.__version__" }

@@ -1,0 +1,26 @@
+# Your own settings and the reports/photos produced by running the program
+config.ini
+organizer_report.csv
+reports/
+test-report.txt
+unknown_files.csv
+photos_input/
+photos_sorted/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
